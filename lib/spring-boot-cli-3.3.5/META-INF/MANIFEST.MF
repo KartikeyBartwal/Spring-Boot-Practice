@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Main-Class: org.springframework.boot.loader.launch.JarLauncher
+Start-Class: org.springframework.boot.cli.SpringCli
+Automatic-Module-Name: spring.boot.cli
+Build-Jdk-Spec: 17
+Built-By: Spring
+Implementation-Title: Spring Boot CLI
+Implementation-Version: 3.3.5
+
