@@ -3,6 +3,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 record Person(String name, int age, String job) {};
+record Address(String street, String city) {};
 
 @Configuration
 public class HelloWorldConfiguration {
@@ -22,4 +23,13 @@ public class HelloWorldConfiguration {
 		var person_object = new Person("Ravi" , 20 , "Cop");
 		return person_object;
 	}
+	
+	@Bean
+	public Address address() {
+		var address_object = new Address("29D", "Chandigarh");
+		return address_object;
+	}
 }
+
+
+

@@ -25,13 +25,14 @@ public class App02GamingBasicJava2 {
 		// name - @Bean 
 		// job - @Bean
 		
-		
 		var name_bean_value = context.getBean("name");
 		var job_bean_value = context.getBean("job");
 		var person_bean_value = context.getBean("person");
+		var address_bean_value = context.getBean("address");
 		
 		System.out.println(name_bean_value);
 		System.out.println(job_bean_value);
-		System.out.println(person_bean_value);
+		System.out.println(person_bean_value + "\n");
+		System.out.println(address_bean_value);
 	}
 }
