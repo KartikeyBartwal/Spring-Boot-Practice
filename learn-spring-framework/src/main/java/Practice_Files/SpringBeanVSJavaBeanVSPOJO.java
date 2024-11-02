@@ -1,4 +1,4 @@
-package com.in28minutes.learn_spring_framework;
+package Practice_Files;
 import java.io.Serializable;
 
 class Pojo {

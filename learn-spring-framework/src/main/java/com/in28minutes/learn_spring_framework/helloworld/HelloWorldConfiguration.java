@@ -1,6 +1,7 @@
-package com.in28minutes.learn_spring_framework;
+package com.in28minutes.learn_spring_framework.helloworld;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 record Person(String name, int age, String job) {};
 record Address(String street, String city) {};
@@ -47,6 +48,13 @@ public class HelloWorldConfiguration {
 	}
 	
 	@Bean
+	public Person person4Parameters(String name, int age, String custom_job) {
+		var person_object = new Person(name, age, custom_job);
+		return person_object;
+	}
+	
+	@Bean
+	@Primary
 	public Address address() {
 		var address_object = new Address("29D", "Chandigarh");
 		return address_object;
@@ -57,7 +65,6 @@ public class HelloWorldConfiguration {
 		var address_object = new Address("29E" , "Chandigarh");
 		return address_object;
 	}
-	
 }
 
 

@@ -1,4 +1,4 @@
-package com.in28minutes.learn_spring_framework;
+package Practice_Files;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
