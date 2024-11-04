@@ -1,4 +1,4 @@
-package com.Business_Calculation_Service;
+package com.in28minutes.learnspringframework.examples.c1;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
