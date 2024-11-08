@@ -1,9 +1,8 @@
 package com.Business_Calculation_Service;
 
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+@Repository
 public class MySQLDataService implements DataService {
 	
 	@Override
