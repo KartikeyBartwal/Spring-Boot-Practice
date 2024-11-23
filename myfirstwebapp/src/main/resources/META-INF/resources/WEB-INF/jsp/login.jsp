@@ -126,14 +126,15 @@ body {
 	<div class="login-container">
 		<div class="login-card">
 			<h1 class="login-title">Welcome Back ${name}!</h1>
-			<form>
+			<form method="POST">
 				<div class="input-group">
-					<label for="email">Email</label> <input type="email" id="email"
-						placeholder="Enter your email" required>
+					<label for="name">Name</label> <input type="text" id="name"
+						name="name" placeholder="Enter your name" required>
 				</div>
 				<div class="input-group">
 					<label for="password">Password</label> <input type="password"
-						id="password" placeholder="Enter your password" required>
+						id="password" name="password" placeholder="Enter your password"
+						required>
 				</div>
 				<div class="actions">
 					<button type="submit" class="btn">Login</button>
